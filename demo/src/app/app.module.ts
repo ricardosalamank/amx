@@ -1,4 +1,6 @@
 import { FlightModule } from './flight/flight.module';
+import { HotelModule } from './hotel/hotel.module';
+import { PackageAmexModule } from './package-amex/package-amex.module';
 import { HttpClientModule } from '@angular/common/http';
 
 import { NgModule } from '@angular/core';
@@ -16,6 +18,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     BrowserModule,
     HttpClientModule,
     FlightModule,
+    HotelModule,
+    PackageAmexModule,
     RouterModule.forRoot([...APP_ROUTES], {...APP_EXTRA_OPTIONS}),
   ],
   declarations: [
